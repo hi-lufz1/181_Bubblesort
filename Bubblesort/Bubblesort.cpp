@@ -38,6 +38,16 @@ void display() { //procedure untuk menampilkan hasil
     }
     cout <<endl;
 }
+void bubbleSortArray() { // Procedure untuk mengurutkan array dengan metode bubble sort
+    for (int i = 1; i < n; i++) {  // looping dengan i dimulai dari 1 hinggan n-1
+        for (int j = 0; j < n - i; j++) { // looping dengan j dimulai dari 0 hinggan n-1
+            if (a[j] > a[j + 1]) { // simpan nilai a[j] lebih besar dari a[j+1}
+                int temp = a[j];
+            }
+        }
+    }
+}
+
 
 
 
