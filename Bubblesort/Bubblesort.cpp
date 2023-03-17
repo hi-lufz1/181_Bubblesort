@@ -42,20 +42,22 @@ void bubbleSortArray() { // Procedure untuk mengurutkan array dengan metode bubb
     for (int i = 1; i < n; i++) {  // looping dengan i dimulai dari 1 hinggan n-1
         for (int j = 0; j < n - i; j++) { // looping dengan j dimulai dari 0 hinggan n-1
             if (a[j] > a[j + 1]) { // simpan nilai a[j] lebih besar dari a[j+1}
-                int temp = a[j];
+                int temp = a[j]; //simpan nilai a[j] ke variabel sementara temp
+                a[j] = a[j+1]; // assign nilai a[j+1] ke a[j]
+                a[j + 1] = temp; //assign nilai temp ke a[j+1]
             }
         }
     }
 }
+int main() {
+    input(); //memanggil read()
+    bubbleSortArray(); //memanggil bubblesortarray()
+    display(); //memanggil display
+    return 0;
+  }
 
 
 
 
-
-
-int main()
-{
-    std::cout << "Hello World!\n";
-}
 
 
