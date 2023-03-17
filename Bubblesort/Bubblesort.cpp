@@ -25,12 +25,22 @@ void input() { // procedure untuk input
         cout << "Data Ke-" << (i + 1) << ": "; // Output ke layar
         cin >> a[i];   // Input dari pengguna
     }
-
-
-
-
-
 }
+
+void display() { //procedure untuk menampilkan hasil
+    cout << endl;     // Ouput baris kosong
+    cout << "==================" << endl; // output ke layar
+    cout << "Element Array yang telah tersusun" << endl; // output ke layar
+    cout << "==================" << endl; // output ke layar
+
+    for (int j = 0; j < n; j++) {
+        cout << a[j] << endl;
+    }
+    cout <<endl;
+}
+
+
+
 
 
 int main()
